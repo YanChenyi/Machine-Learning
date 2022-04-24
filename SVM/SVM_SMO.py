@@ -224,6 +224,7 @@ def load_data(file_name, N, num):
     return x, y
 
 
+print("Training begins...")
 for num in range(10):
     X, Y = load_data('./mnist_train.csv', num=num, N=1000)
     test_X, test_Y = load_data('./mnist_test.csv', num=num, N=100)
